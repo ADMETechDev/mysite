@@ -6,7 +6,7 @@ import { Monitor, Smartphone, Cpu, Globe, Search, CircuitBoard, Code } from 'luc
 const services = [
   {
     id: 'advertising',
-    name: 'Advertising & Digital Marketing',
+    name: 'Ads & Digital Marketing',
     icon: Monitor,
     description: 'Strategic digital campaigns that drive results and maximize ROI across all digital channels.',
     features: [
@@ -19,7 +19,7 @@ const services = [
   },
   {
     id: 'social-media',
-    name: 'Social Media Marketing',
+    name: 'Social Media',
     icon: Smartphone,
     description: 'Build your brand presence and engage with your audience across all major social platforms.',
     features: [
@@ -32,7 +32,7 @@ const services = [
   },
   {
     id: 'electronics',
-    name: 'Electronics Research & Development',
+    name: 'Electronics R&D',
     icon: Cpu,
     description: 'Innovative electronic solutions from concept to prototype, bringing your ideas to life.',
     features: [
@@ -45,7 +45,7 @@ const services = [
   },
   {
     id: 'web-dev',
-    name: 'Web Development',
+    name: 'Web Dev',
     icon: Globe,
     description: 'Modern, responsive websites and web applications built with cutting-edge technologies.',
     features: [
@@ -58,7 +58,7 @@ const services = [
   },
   {
     id: 'seo',
-    name: 'Search Engine Optimization (SEO)',
+    name: 'SEO',
     icon: Search,
     description: 'Improve your search rankings and drive organic traffic with proven SEO strategies.',
     features: [
@@ -84,7 +84,7 @@ const services = [
   },
   {
     id: 'mobile-app',
-    name: 'Mobile App Development',
+    name: 'Mobile Apps',
     icon: Code,
     description: 'Native and cross-platform mobile applications that deliver exceptional user experiences.',
     features: [
