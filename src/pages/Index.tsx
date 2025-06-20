@@ -31,6 +31,19 @@ const services = [
     ]
   },
   {
+    id: 'pcb-design',
+    name: 'PCB Design',
+    icon: CircuitBoard,
+    description: 'Professional PCB design services from schematic to manufacturing-ready boards.',
+    features: [
+      'Schematic Design',
+      'PCB Layout & Routing',
+      'Signal Integrity Analysis',
+      'Design Rule Checking',
+      'Manufacturing Support'
+    ]
+  },
+  {
     id: 'social-media',
     name: 'Social Media Marketing',
     icon: Smartphone,
@@ -67,19 +80,6 @@ const services = [
       'Technical SEO Audits',
       'Link Building Campaigns',
       'SEO Analytics & Reporting'
-    ]
-  },
-  {
-    id: 'pcb-design',
-    name: 'PCB Design',
-    icon: CircuitBoard,
-    description: 'Professional PCB design services from schematic to manufacturing-ready boards.',
-    features: [
-      'Schematic Design',
-      'PCB Layout & Routing',
-      'Signal Integrity Analysis',
-      'Design Rule Checking',
-      'Manufacturing Support'
     ]
   },
   {
