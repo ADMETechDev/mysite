@@ -6,7 +6,7 @@ import { Monitor, Smartphone, Cpu, Globe, Search, CircuitBoard, Code } from 'luc
 const services = [
   {
     id: 'advertising',
-    name: 'Advertising & Digital Marketing',
+    name: 'Test',
     icon: Monitor,
     description: 'Strategic digital campaigns that drive results and maximize ROI across all digital channels.',
     features: [
