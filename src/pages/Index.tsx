@@ -8,13 +8,18 @@ const services = [
     id: 'advertising',
     name: 'Product Design',
     icon: Monitor,
-    description: 'Strategic digital campaigns that drive results and maximize ROI across all digital channels.',
+    description: 'Purposeful, user-centered physical products developed from concept to production',
     features: [
-      'PPC Campaign Management',
-      'Social Media Advertising',
-      'Display & Banner Ads',
-      'Conversion Optimization',
-      'Analytics & Reporting'
+      'Industrial Design and Ergonomics',
+      'Mechanical Engineering and DFM (Design for Manufacturing)',
+      '3D CAD Modeling and Rendering',
+      'Rapid Prototyping and Functional Testing',
+      'Materials Selection and CMF Strategy (Color, Material, Finish)'
+    ],
+    benefits: [
+      'Multidisciplinary team blending creativity and engineering rigor',
+      'End-to-end development from sketch to mass production',
+      'Strong vendor network for prototyping and manufacturing scale-up'
     ]
   },
   {
@@ -172,24 +177,22 @@ const Index = () => {
                     <div className="bg-gradient-to-br from-blue-50 to-slate-50 p-6 rounded-xl">
                       <h3 className="text-xl font-semibold text-gray-900 mb-4">Why Choose Us?</h3>
                       <div className="space-y-3 text-gray-700">
-                        <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                            <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                          </div>
-                          <span>Expert team with proven results</span>
-                        </div>
-                        <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                            <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                          </div>
-                          <span>24/7 support and maintenance</span>
-                        </div>
-                        <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
-                            <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
-                          </div>
-                          <span>Scalable solutions for growth</span>
-                        </div>
+                        {(selectedService.benefits ?? [
+                          'Expert team with proven results',
+                          '24/7 support and maintenance',
+                          'Scalable solutions for growth'
+                        ]).map((benefit, index) => {
+                          const colors = ['green', 'blue', 'purple'];
+                          const color = colors[index % colors.length];
+                          return (
+                            <div key={index} className="flex items-center gap-3">
+                              <div className={`w-8 h-8 bg-${color}-100 rounded-full flex items-center justify-center`}>
+                                <div className={`w-3 h-3 bg-${color}-500 rounded-full`}></div>
+                              </div>
+                              <span>{benefit}</span>
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
                   </div>

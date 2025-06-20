@@ -349,13 +349,18 @@
                 id: 'advertising',
                 name: 'Product Design',
                 icon: `<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="m22 3-10 9L2 3"/></svg>`,
-                description: 'Strategic digital campaigns that drive results and maximize ROI across all digital channels.',
+                description: 'Purposeful, user-centered physical products developed from concept to production',
                 features: [
-                    'PPC Campaign Management',
-                    'Social Media Advertising',
-                    'Display & Banner Ads',
-                    'Conversion Optimization',
-                    'Analytics & Reporting'
+                    'Industrial Design and Ergonomics',
+                    'Mechanical Engineering and DFM (Design for Manufacturing)',
+                    '3D CAD Modeling and Rendering',
+                    'Rapid Prototyping and Functional Testing',
+                    'Materials Selection and CMF Strategy (Color, Material, Finish)'
+                ],
+                benefits: [
+                    'Multidisciplinary team blending creativity and engineering rigor',
+                    'End-to-end development from sketch to mass production',
+                    'Strong vendor network for prototyping and manufacturing scale-up'
                 ]
             },
             {
@@ -477,27 +482,27 @@
                         </ul>
                     </div>
                     
-                    <div class="why-choose">
-                        <h3>Why Choose Us?</h3>
-                        <div class="benefit">
-                            <div class="benefit-icon">
-                                <div class="benefit-dot"></div>
+                        <div class="why-choose">
+                            <h3>Why Choose Us?</h3>
+                            ${
+                                (selectedService.benefits || [
+                                    'Expert team with proven results',
+                                    '24/7 support and maintenance',
+                                    'Scalable solutions for growth'
+                                ])
+                                    .map(
+                                        benefit => `
+                            <div class="benefit">
+                                <div class="benefit-icon">
+                                    <div class="benefit-dot"></div>
+                                </div>
+                                <span>${benefit}</span>
                             </div>
-                            <span>Expert team with proven results</span>
+                            `
+                                    )
+                                    .join('')
+                            }
                         </div>
-                        <div class="benefit">
-                            <div class="benefit-icon">
-                                <div class="benefit-dot"></div>
-                            </div>
-                            <span>24/7 support and maintenance</span>
-                        </div>
-                        <div class="benefit">
-                            <div class="benefit-icon">
-                                <div class="benefit-dot"></div>
-                            </div>
-                            <span>Scalable solutions for growth</span>
-                        </div>
-                    </div>
                 </div>
                 
                 <div class="action-buttons">
