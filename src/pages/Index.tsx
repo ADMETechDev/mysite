@@ -6,7 +6,7 @@ import { Monitor, Smartphone, Cpu, Globe, Search, CircuitBoard, Code } from 'luc
 const services = [
   {
     id: 'advertising',
-    name: 'Test',
+    name: 'Product Design',
     icon: Monitor,
     description: 'Strategic digital campaigns that drive results and maximize ROI across all digital channels.',
     features: [
@@ -15,19 +15,6 @@ const services = [
       'Display & Banner Ads',
       'Conversion Optimization',
       'Analytics & Reporting'
-    ]
-  },
-  {
-    id: 'social-media',
-    name: 'Social Media Marketing',
-    icon: Smartphone,
-    description: 'Build your brand presence and engage with your audience across all major social platforms.',
-    features: [
-      'Content Strategy & Creation',
-      'Community Management',
-      'Influencer Partnerships',
-      'Social Media Analytics',
-      'Brand Monitoring'
     ]
   },
   {
@@ -41,6 +28,19 @@ const services = [
       'Component Selection',
       'Testing & Validation',
       'Documentation & Support'
+    ]
+  },
+  {
+    id: 'social-media',
+    name: 'Social Media Marketing',
+    icon: Smartphone,
+    description: 'Build your brand presence and engage with your audience across all major social platforms.',
+    features: [
+      'Content Strategy & Creation',
+      'Community Management',
+      'Influencer Partnerships',
+      'Social Media Analytics',
+      'Brand Monitoring'
     ]
   },
   {
